@@ -12,14 +12,14 @@ import Contact from './Contact'
          },
          {
            id: 2,
-           name: 'John Doe',
+           name: 'Karen Willims',
            email: 'karen@gmail.com',
            phone: '555-555-555'
 
          },
          {
            id: 3,
-           name: 'John Doe',
+           name: 'Henry Jhonson',
            email: 'henry@gmail.com',
            phone: '555-555-555'
          }
@@ -31,14 +31,14 @@ import Contact from './Contact'
     const {contacts} =this.state;
 
     return (
-      <div>
+      <React.Fragment>
        {contacts.map(contact =>(
          <Contact
           key={contact.id}
           contact={contact}
          />
        ))}
-      </div>
+      </React.Fragment>
     )
   }
 }
